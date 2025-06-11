@@ -29,7 +29,7 @@ public class Controls implements KeyListener, MouseListener{
 
 	//Method for generating sound on scroll
 	private void playSound() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-		File file = new File("../src/Audio/Tab.wav");
+		File file = new File("Audio/Tab.wav");
 		AudioInputStream as = AudioSystem.getAudioInputStream(file);
 		Clip clip = AudioSystem.getClip();
 		clip.open(as);

@@ -18,7 +18,7 @@ public class Main {
 	
 	//Starts the background music. 
 	public static void startMusic() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-		File file = new File("../src/Audio/background.wav");
+		File file = new File("Audio/background.wav");
 		AudioInputStream as = AudioSystem.getAudioInputStream(file);
 		Clip clip = AudioSystem.getClip();
 		clip.open(as);
